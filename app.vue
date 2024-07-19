@@ -1,7 +1,9 @@
 <template>
   <div>
     <AppLayoutHeader />
-    <div>content</div>
-    <AppLayoutFooter />
+    <AppLayoutHero />
+    <AppLayoutLogoTypes />
+    <AppLayoutSubHeading />
+    <AppLayoutCardContent />
   </div>
 </template>

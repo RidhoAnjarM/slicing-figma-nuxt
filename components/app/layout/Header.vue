@@ -1,162 +1,400 @@
 <template>
-    <header>
-        <nav class="navbar">
-            <div class="icon">
-                <img src="asset/Icon.png" alt="logo">
-                <img src="asset/Positivus.png" alt="logo">
-            </div>
-            <ul class="navigasi">
-                <li><a href="#">About us</a> </li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Use Cases</a> </li>
-                <li><a href="#">Pricing</a></li>
-                <li><a href="#">Blog</a></li>
-                <section class="button"><a href="#">Reques a quote</a></section>
-            </ul>
-        </nav>
-
-        <section class="hiro">
-            <div class="text">
-                <h1>Navigating the digital landscape for success</h1>
-                <p>Our digital marketing agency helps businesses grow and succeed online through a range of services
-                    including
-                    SEO, PPC, social media marketing, and content creation.</p>
-                <div class="buttonn">
-                    <a href="#">Book a consultation</a>
+    <div class="container">
+        <header>
+            <nav class="navbar">
+                <div class="icon">
+                    <img src="~/assets/Icon.png" alt="logo">
+                    <img src="~/assets/Positivus.png" alt="logo">
                 </div>
-            </div>
-            <div class="ilustration">
-                <img src="asset/ilustration.svg" alt="">
-            </div>
-        </section>
-    </header>
+                <ul class="navigasi">
+                    <li><a href="#">About us</a> </li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Use Cases</a> </li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <section class="button"><a href="#">Reques a quote</a></section>
+                </ul>
+            </nav>
+        </header>
+    </div>
 </template>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+
 :root {
-  --Green: #B9FF66;
-  --Dark: #191A23;
-  --Grey: #F3F3F3;
+    --Green: #B9FF66;
+    --Dark: #191A23;
+    --Grey: #F3F3F3;
+}
+
+.container {
+    width: 1443px;
 }
 
 header {
-  padding-inline: 100px;
-  margin-bottom: 70px;
-  width: 1443px;
+    padding-inline: 100px;
+    margin-bottom: 70px;
+    width: 1443px;
 }
 
 .navbar {
-  margin-top: 40px;
-  margin-bottom: 70px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    margin-top: 40px;
+    margin-bottom: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .icon {
-  /*logo positivus*/
-  display: flex;
-  width: 219.537px;
-  height: 36px;
-  justify-content: center;
-  align-items: center;
-  gap: 12.92px;
+    /*logo positivus*/
+    display: flex;
+    width: 219.537px;
+    height: 36px;
+    justify-content: center;
+    align-items: center;
+    gap: 12.92px;
 }
 
 .navigasi {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .navigasi li {
-  list-style: none;
-  margin-right: 40px;
+    list-style: none;
+    margin-right: 40px;
 }
 
 .navigasi li a {
-  text-decoration: none;
-  color: #000;
-  font-family: "Space Grotesk";
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 28px;
+    text-decoration: none;
+    color: #000;
+    font-family: "Space Grotesk";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
 }
 
 .button {
-  /*button reques a quote*/
-  border: 1px solid #000;
-  border-radius: 14px;
+    /*button reques a quote*/
+    border: 1px solid #000;
+    border-radius: 14px;
 }
 
 .button a {
-  text-decoration: none;
-  color: var(--Dark);
-  font-family: "Space Grotesk";
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 28px;
-  display: flex;
-  padding: 20px 35px;
-  align-items: flex-start;
+    text-decoration: none;
+    color: var(--Dark);
+    font-family: "Space Grotesk";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    display: flex;
+    padding: 20px 35px;
+    align-items: flex-start;
 }
 
-.text{
-  width: 531px;
-  height: 481px;
+.text {
+    width: 531px;
+    height: 481px;
 }
 
-.hiro{
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
+.hiro {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
 header h1 {
-  width: 531px;
-  color: #000;
-  font-family: "Space Grotesk";
-  font-size: 60px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  float: left;
-  margin: 0px 0px 35px 0px;
+    width: 531px;
+    color: #000;
+    font-family: "Space Grotesk";
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    float: left;
+    margin: 0px 0px 35px 0px;
 }
 
 header p {
-  width: 498px;
-  color: #000;
-  font-family: "Space Grotesk";
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 28px;
-  margin: 35px 0px 35px 0px;
+    width: 498px;
+    color: #000;
+    font-family: "Space Grotesk";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    margin: 35px 0px 35px 0px;
 }
 
 .buttonn {
-  display: block;
-  padding: 20px 35px;
-  align-items: flex-start;
-  gap: 10px;
-  border-radius: 14px;
-  background: var(--Dark, #191A23);
-  float: left;
-  margin-bottom: 70px;
+    display: block;
+    padding: 20px 35px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 14px;
+    background: var(--Dark, #191A23);
+    float: left;
+    margin-bottom: 70px;
 }
 
 .buttonn a {
-  color: #FFF;
-  text-align: center;
-  font-family: "Space Grotesk";
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 28px;
-  text-decoration: none;
+    color: #FFF;
+    text-align: center;
+    font-family: "Space Grotesk";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    text-decoration: none;
+}
+
+/*Batas header*/
+
+.content {
+    width: 1443px;
+    padding-inline: 100px;
+    flex-wrap: wrap;
+}
+
+.logotypes {
+    justify-content: space-between;
+    display: flex;
+    width: 1443px;
+    padding-inline: 100px;
+}
+
+.logo {
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+}
+
+.logo li {
+    list-style: none;
+    padding-right: 96;
+}
+
+.logo a {
+    width: 128.626px;
+    height: 48px;
+
+}
+
+.heading {
+    margin: 104px 0px;
+    width: 1443px;
+    display: flex;
+    padding-inline: 100px;
+}
+
+.heading h2 {
+    color: #000;
+    font-family: "Space Grotesk";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0;
+}
+
+.heading p {
+    width: 580px;
+    color: #000;
+    font-family: "Space Grotesk";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+}
+
+.services {
+    /*Teks Services*/
+    display: flex;
+    width: 180px;
+    height: 51px;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--Green);
+    margin-right: 40px;
+    border-radius: 7px;
+}
+
+.cardcontent {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.cards,
+.cards4 {
+    /*card ke 1&4 warna Grey*/
+    width: 600px;
+    padding: 50px;
+    align-items: center;
+    border-radius: 45px;
+    border: 1px solid var(--Dark);
+    background: var(--Grey);
+    box-shadow: 0px 5px 0px 0px #191A23;
+    margin-bottom: 40px;
+}
+
+.cards2,
+.cards5 {
+    /*card ke 2&5 warna Green*/
+    width: 600px;
+    padding: 50px;
+    align-items: center;
+    border-radius: 45px;
+    border: 1px solid var(--Dark);
+    background: var(--Green);
+    box-shadow: 0px 5px 0px 0px #191A23;
+    margin-bottom: 40px;
+}
+
+.cards3,
+.cards6 {
+    /*card ke 3&6 warna Dark*/
+    width: 600px;
+    padding: 50px;
+    align-items: center;
+    border-radius: 45px;
+    border: 1px solid var(--Dark);
+    background: var(--Dark);
+    box-shadow: 0px 5px 0px 0px #191A23;
+    margin-bottom: 40px;
+}
+
+.heading3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 221px;
+}
+
+.cards h3,
+.cards4 h3,
+.cards6 h3 {
+    /*Teks h3 di card background Green color Dark*/
+    display: flex;
+    color: var(--Dark);
+    font-family: "Space Grotesk";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--Green);
+    border-radius: 7px;
+    padding: 0px 7px 0px 7px;
+    float: left;
+    margin: 0;
+}
+
+.cards2 h3,
+.cards3 h3,
+.cards5 h3 {
+    /*Teks h3 di card background White color Dark*/
+    display: flex;
+    color: var(--Dark);
+    font-family: "Space Grotesk";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 7px;
+    padding: 0px 7px 0px 7px;
+    float: left;
+    margin: 0;
+}
+
+.cards p,
+.cards2 p,
+.cards4 p,
+.cards5 p {
+    color: var(--Black, #000);
+    font-family: "Space Grotesk";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    margin: 0px 0px 0px 15px;
+}
+
+.cards3 p,
+.cards6 p {
+    color: white;
+    font-family: "Space Grotesk";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    margin: 0px 0px 0px 15px;
+}
+
+.link,
+.link2,
+.link3,
+.link4,
+.link5,
+.link6 {
+    margin: 93px 0px 0px 0px;
+}
+
+.link a,
+.link2 a,
+.link4 a,
+.link5 a {
+    text-decoration: none;
+    color: var(--Dark);
+    display: flex;
+    align-items: center;
+}
+
+.link3 a,
+.link6 a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.image,
+.image2,
+.image3,
+.image4,
+.image5,
+.image6 {
+    float: right;
+    margin: auto;
+}
+
+.image {
+    margin-top: 20px;
+}
+
+.image2 {
+    margin-top: 35px;
+}
+
+.image4 {
+    margin-top: 15px;
+}
+
+.image5 {
+    margin-top: 12px;
+}
+
+.image6 {
+    margin-top: 20px;
 }
 </style>
